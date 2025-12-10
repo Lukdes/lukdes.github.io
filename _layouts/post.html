@@ -1,0 +1,31 @@
+---
+layout: default
+excerpt_separator: <!--more-->
+---
+<!-- title, categories -->
+{% if page.live-link %}
+    <h1><a href={{ page.live-link }}>{{ page.title }} ↗</a></h1>
+{% else %}
+    <h1>{{ page.title }}</h1>
+{% endif %}
+
+<section class="post-details-wrapper">
+    {% if page.role and page.company %}
+        <p class="post-role">{{ page.role }} @ {{ page.company }}</p>
+    {% else %}
+        <p class="post-role">{{ page.role }}</p>
+    {% endif %}
+
+    {% if page.categories %}
+    <p class="post-categories">{{page.categories | join: ', '}}</p>
+    {% endif %}
+</section>
+<!-- body content -->
+<section>
+
+{{ content }}
+
+</section>
+
+<!-- back link -->
+<a href="{{ "/" | absolute_url }}">back to home</a>

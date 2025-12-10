@@ -2,3 +2,40 @@
 ---
 
 @import "{{ site.theme }}";
+
+/* index styles */
+.project-box {
+    margin: 24px 0;
+    padding: 4px 0;
+
+    .project-title {
+        margin-top: 12px;
+        font-size: large;
+    }
+
+    img {
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        margin: 8px 0;
+        opacity: 80%;
+    }
+}
+
+/* individual post styles */
+.post-details-wrapper {
+    margin-bottom: 3rem;
+    padding: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.post-role {
+    margin-bottom: 8px;
+}
+
+.post-categories {
+    margin-bottom: 8px;
+    font-style: italic;
+}
