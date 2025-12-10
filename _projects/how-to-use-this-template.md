@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "How to use this post template"
 categories: "template"
 image: "https://www.markdownguide.org/assets/images/tux.png"

@@ -23,3 +23,7 @@ description: B.S. in Computer Engineering, M.S. in Electrical Engineering specia
 logo: assets/img/logo.png
 # Build settings
 theme: jekyll-theme-minimal
+
+collections:
+  projects:
+    output: true

@@ -4,16 +4,16 @@ excerpt_separator: <!--more-->
 ---
 <!-- title, categories -->
 {% if page.live-link %}
-    <h1><a href={{ page.live-link }}>{{ page.title }} ↗</a></h1>
+<h1><a href={{ page.live-link }}>{{ page.title }} ↗</a></h1>
 {% else %}
-    <h1>{{ page.title }}</h1>
+<h1>{{ page.title }}</h1>
 {% endif %}
 
 <section class="post-details-wrapper">
     {% if page.role and page.company %}
-        <p class="post-role">{{ page.role }} @ {{ page.company }}</p>
+    <p class="post-role">{{ page.role }} @ {{ page.company }}</p>
     {% else %}
-        <p class="post-role">{{ page.role }}</p>
+    <p class="post-role">{{ page.role }}</p>
     {% endif %}
 
     {% if page.categories %}
@@ -23,9 +23,9 @@ excerpt_separator: <!--more-->
 <!-- body content -->
 <section>
 
-{{ content }}
+    {{ content }}
 
 </section>
 
 <!-- back link -->
-<a href="{{ "/" | absolute_url }}">back to home</a>
+<a href="/">back to home</a>

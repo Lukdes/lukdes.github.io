@@ -14,16 +14,15 @@ You can also view my resume [here](/assets/resume.pdf).
 
 # Featured Projects
 
-{% for post in site.posts %}
+{% for project in site.projects %}
   <div class="project-box">
-    <img src="{{ post.image }}" alt="{{ post.image-alt }}"/>
+    <img src="{{ project.image }}" alt="{{ project.image-alt }}"/>
     <div class="project-title">
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ project.url }}">{{ project.title }}</a>
     </div>
     <span class="project-category">
-        {{ post.categories | join: ', ' }}
+        {{ project.categories | join: ', ' }}
     </span>
-    <p>{{ post.excerpt }}</p>
+    <p>{{ project.excerpt }}</p>
   </div>
 {% endfor %}
-

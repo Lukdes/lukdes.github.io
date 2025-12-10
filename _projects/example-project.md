@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "Example Project"
 role: "Electrical Engineer Intern"
 company: "ACME INC"
